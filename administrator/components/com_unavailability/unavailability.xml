@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	type="component" 
+	version="3.0" 
+	method="upgrade">
+	<name>com_unavailability</name>
+	<author>Setor de Desenvolvimento de Sistemas / Divisão TIC</author>
+	<creationDate>Setembro 2016</creationDate>
+	<copyright>
+		(C) Copyright 2016 - 2021 Tribunal de Justiça do Estado do Amazonas. 
+		All rights reserved.
+	</copyright>
+	<license>
+		GNU General Public License version 2 or later; 
+		see LICENSE.txt
+	</license>
+	<authorEmail>marcus.martinho@tjam.jus.br</authorEmail>
+	<authorUrl>www.tjam.jus.br</authorUrl>
+	<version>1.0.0</version>
+	<description>com_unavailability_xml_description</description>
+	<scriptfile>script.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>media</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>unavailability.php</filename>
+	</files>
+	<administration>
+		<menu img="class:categories">COM_UNAVAILABILITY_MENU</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu
+				link="option=com_unavailability"
+				view="unavailabilities"
+				img="class:generic"
+				alt="Unavailability/Unavailabilities">
+				COM_UNAVAILABILITY_SUBMENU_UNAVAILABILITIES
+			</menu>
+			<menu
+				link="option=com_categories&amp;extension=com_unavailability"
+				view="categories"
+				img="class:categories"
+				alt="Unavailability/Categories">
+				COM_UNAVAILABILITY_SUBMENU_CATEGORIES
+			</menu>
+			<menu
+				link="option=com_unavailability&amp;view=preview"
+				view="categories"
+				img="class:generic"
+				alt="Unavailability/Preview">
+				COM_UNAVAILABILITY_SUBMENU_PREVIEW
+			</menu>			
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>media</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>script.php</filename>
+			<filename>unavailability.php</filename>
+			<filename>unavailability.xml</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_unavailability.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_unavailability.sys.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_unavailability.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_unavailability.sys.ini</language>			
+		</languages>
+	</administration>
+</extension>

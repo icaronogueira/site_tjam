@@ -1,0 +1,1 @@
+-- Empty for proper setup of the schemas table entry.s

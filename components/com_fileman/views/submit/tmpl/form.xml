@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FILEMAN_VIEW_SUBMIT">
+		<message>
+			<![CDATA[COM_FILEMAN_VIEW_SUBMIT_DESCRIPTION]]>
+		</message>
+	</layout>
+	<fields name="params" addfieldpath="/components/com_fileman/forms/fields">
+		<fieldset name="basic" label="FILEman">
+			<field name="folder" type="folders" label="SUBMIT_FOLDER"
+			   id="fileman_folder"
+				show_root="1"
+				description="SUBMIT_FOLDER_DESCRIPTION" />
+		</fieldset>
+	</fields>
+</metadata>

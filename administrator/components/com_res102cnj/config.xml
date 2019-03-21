@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset 
+		name="component"
+		label="COM_RES102CNJ_COMPONENT_LABEL"
+		description="COM_RES102CNJ_COMPONENT_DESC">
+
+		<field
+			name="res102cnjdir"
+			type="text"
+			default="media/com_res102cnj"
+			label="COM_RES102CNJ_DIR_LABEL"
+			description="COM_RES102CNJ_DIR_DESC"
+			>
+		</field>
+		
+		<field
+			name="res102cnjurl"
+			type="text"
+			default=""
+			label="COM_RES102CNJ_URL_LABEL"
+			description="COM_RES102CNJ_URL_DESC"
+			>
+		</field>		
+
+		<field
+			name="res102cnjlink"
+			type="text"
+			default=""
+			label="COM_RES102CNJ_URL_LINK_LABEL"
+			description="COM_RES102CNJ_URL_LINK_DESC"
+			>
+		</field>
+		
+		<field
+			name="res102cnjintro"
+			type="textarea"
+			default=""
+			label="COM_RES102CNJ_INTROTEXT_LABEL"
+			description="COM_RES102CNJ_INTROTEXT_DESC"
+			>
+		</field>
+
+		<field
+			name="anosretroativos"
+			type="text"
+			default="5"
+			label="COM_RES102CNJ_ANOSRETROATIVOS_LABEL"
+			description="COM_RES102CNJ_ANOSRETROATIVOS_DESC"
+			>
+		</field>
+		
+		<field
+			name="tam_max_arq"
+			type="text"
+			default="8388608"
+			label="COM_RES102CNJ_TAM_MAX_ARQ_LABEL"
+			description="COM_RES102CNJ_TAM_MAX_ARQ_DESC"
+			>
+		</field>		
+		
+		<field
+			name="tam_min_arq"
+			type="text"
+			default="10"
+			label="COM_RES102CNJ_TAM_MIN_ARQ_LABEL"
+			description="COM_RES102CNJ_TAM_MIN_ARQ_DESC"
+			>
+		</field>		
+		
+		<field
+			name="use_captcha"
+			type="radio"
+			label="COM_RES102CNJ_USE_CAPTCHA_LABEL"
+			description="COM_RES102CNJ_USE_CAPTCHA_DESC"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field
+			name="captcha_length"
+			type="text"
+			default="6"
+			label="COM_RES102CNJ_CAPTCHA_LENGTH_LABEL"
+			description="COM_RES102CNJ_CAPTCHA_LENGTH_DESC"
+			>
+		</field>
+				
+	</fieldset>
+	
+	<fieldset 
+		name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+			name="rules" 
+			type="rules"
+			component="com_res102cnj"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>	
+</config>

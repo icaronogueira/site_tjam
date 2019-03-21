@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout 
+		title="COM_UNAVAILABILITY_UPDUNAVAILABILITIES_VIEW_DEFAULT_TITLE"
+		option="COM_UNAVAILABILITY_UPDUNAVAILABILITIES_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_UNAVAILABILITY_UPDUNAVAILABILITIES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="catid"
+				type="category"
+				extension="com_unavailability"
+				default=""
+				class="inputbox"
+				label="COM_UNAVAILABILITY_UPDUNAVAILABILITIES_VIEW_FIELD_CATID_LABEL"
+				description="COM_UNAVAILABILITY_UPDUNAVAILABILITIES_VIEW_FIELD_CATID_DESC"
+				required="true">
+				<option value="0">JOPTION_SELECT_CATEGORY</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

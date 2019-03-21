@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Visualização em Calendário">
+		<message>
+			Mostra os documentos de indisponibilidade organizados em um calendário. 
+			Por padrão, é mostrado o mês atual.
+		</message>
+	</layout>
+</metadata>

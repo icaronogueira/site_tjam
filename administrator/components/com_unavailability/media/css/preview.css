@@ -1,0 +1,17 @@
+div#toolbar div#toolbar-back button.btn span.icon-back::before {
+	content: "";
+}
+.unavailability_title {
+	color: #555555;
+	font-family: 'Titillium Maps', Arial;
+	font-size: 14pt;
+}
+.unavailability {
+	padding-bottom: 20px;
+	float: left;
+	padding-right: 20px;
+}
+.unavailability_element {
+	width: 150px;
+	padding-top: 2px;
+}

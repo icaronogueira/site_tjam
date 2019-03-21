@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="COM_FILEMAN_VIEW_FOLDER">
+		<message><![CDATA[COM_FILEMAN_VIEW_FOLDER]]></message>
+		<options var="layout">
+			<default name="COM_FILEMAN_VIEW_FOLDER" msg="COM_FILEMAN_VIEW_FOLDER_DESCRIPTION">default</default>
+		</options>
+	</view>
+	<fields name="request" addfieldpath="/components/com_fileman/forms/fields">
+		<!-- Basic options. -->
+		<fieldset name="request">
+			<field
+					name="folder"
+					id="fileman_folder"
+					type="folders"
+					show_root="true"
+					url_encode="1"
+					default=""
+					label="FOLDER"
+			/>
+			<field name="layout" type="list" default="table" label="JGLOBAL_FIELD_LAYOUT_LABEL">
+				<option value="table">COM_FILEMAN_LAYOUT_TABLE</option>
+				<option value="gallery">COM_FILEMAN_LAYOUT_GALLERY</option>
+			</field>
+		</fieldset>
+	</fields>
+	<fields name="params" addfieldpath="/components/com_fileman/forms/fields">
+		<fieldset name="basic" label="FILEman">
+			<field name="filemanmenufixer" type="filemanmenufixer" view="COM_FILEMAN_VIEW_FOLDER" />
+			<field name="filemanfolderlayout" type="filemanfolderlayout" />
+			<field name="show_filenames" type="radio" class="btn-group"  default="1" label="SHOW_FILENAMES">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_thumbnails" type="radio" class="btn-group"  default="1" label="SHOW_THUMBNAILS">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_folders" type="radio" class="btn-group" default="1" label="SHOW_FOLDERS">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="humanize_filenames" type="radio" class="btn-group" default="1" label="HUMANIZE_FILENAMES"
+				   description="HUMANIZE_FILENAMES_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="limit" type="list" default="-1" label="FILES_PER_PAGE">
+				<option value="-1">SYSTEM_DEFAULT</option>
+				<option value="0">UNLIMITED</option>
+			</field>
+			<field name="sort" type="list" default="name" label="SORT_BY">
+				<option value="name">SORT_BY_NAME</option>
+				<option value="modified_on">SORT_BY_MODIFIED_ON</option>
+			</field>
+			<field name="direction" type="list" default="asc" label="SORT_DIRECTION">
+				<option value="asc">SORT_DIRECTION_ASC</option>
+				<option value="desc">SORT_DIRECTION_DESC</option>
+			</field>
+			<field name="show_icon" type="radio" class="btn-group" default="1" label="SHOW_ICON">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_filesize" type="radio" class="btn-group" default="0" label="SHOW_FILESIZES">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_modified_date" type="radio" class="btn-group" default="0" label="SHOW_MODIFIED_DATE">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_copy_link" type="radio" class="btn-group" default="1" label="SHOW_COPY_LINK">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field label="JGLOBAL_FIELDSET_ADVANCED" type="heading" />
+			<field name="track_downloads" type="radio" class="btn-group" default="1" label="TRACK_DOWNLOADS" description="TRACK_DOWNLOADS_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="track_views" type="radio" class="btn-group"  default="1" label="TRACK_VIEWS" description="TRACK_VIEWS_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="preview_with_gdocs" type="radio" class="btn-group" default="0" label="PREVIEW_WITH_GDOCS" description="PREVIEW_WITH_GDOCS_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="force_download" type="radio" class="btn-group" default="0" label="FORCE_DOWNLOAD" description="FORCE_DOWNLOAD_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="download_in_blank_page" type="radio" class="btn-group" default="0" label="DOWNLOAD_IN_BLANK_PAGE" description="DOWNLOAD_IN_BLANK_PAGE_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="show_images_only" type="radio" class="btn-group" default="1" label="SHOW_IMAGES_ONLY" description="SHOW_IMAGES_ONLY_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

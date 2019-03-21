@@ -1,0 +1,20 @@
+/**
+ * @package		SP Flickr Gallery
+ * @copyright	Copyright (C) 2010 - 2015 JoomShaper. All rights reserved.
+ * @license		GNU General Public License version 2 or later; 
+ */
+
+
+.sp-features .sp-feature i{
+ 	font-size: 24px;
+ 	  margin: 20px 0;
+ }
+.sp-features .sp-feature h3{
+ 	font-size: 24px;
+ }
+.sp-features .sp-feature p{
+  	font-size: 14px;
+  }
+.sp-features .sp-feature a{
+	font-size: 14px;
+}

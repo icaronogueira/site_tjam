@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="sojam_manifestacao">
+		<field
+			name="tipo_id"
+			type="tipos"
+			multiple="false"
+			class="inputbox"
+			required="true"
+			label="COM_SOJAM_FIELD_TIPO_LABEL"
+			description="COM_SOJAM_FIELD_TIPO_DESC"/>		
+		<field
+			name="nome"
+			type="text"			
+			class="inputbox"
+			size="40"
+			required="true"
+			label="COM_SOJAM_FIELD_NOME_LABEL"
+			description="COM_SOJAM_FIELD_NOME_DESC"/>
+		<field 
+			name="tpessoa"
+			type="list"
+			class="inputbox small"
+			size="1"
+			default="0"
+			required="true"
+			label="COM_SOJAM_FIELD_TPESSOA_LABEL"
+			description="COM_SOJAM_FIELD_TPESSOA_DESC">
+			<option value="0">COM_SOJAM_FIELD_TPESSOA_FISICA_OPTION</option>
+			<option value="1">COM_SOJAM_FIELD_TPESSOA_JURIDICA_OPTION</option>
+		</field>			
+		<field
+			name="cpf"
+			type="text"
+			class="inputbox"
+			required="true"
+			size="40"
+			label="COM_SOJAM_FIELD_CPF_LABEL"
+			description="COM_SOJAM_FIELD_CPF_DESC"/>			
+		<field 
+			name="relacionamento"
+			type="list"
+			class="inputbox small"
+			size="1"
+			default="0"
+			required="true"
+			label="COM_SOJAM_FIELD_RELACIONAMENTO_LABEL"
+			description="COM_SOJAM_FIELD_RELACIONAMENTO_DESC">
+			<option value="0">COM_SOJAM_FIELD_RELACIONAMENTO_ADVOGADO_OPTION</option>
+			<option value="1">COM_SOJAM_FIELD_RELACIONAMENTO_MAGISTRADO_OPTION</option>
+			<option value="2">COM_SOJAM_FIELD_RELACIONAMENTO_PARTE_OPTION</option>
+			<option value="3">COM_SOJAM_FIELD_RELACIONAMENTO_SERVIDOR_OPTION</option>
+			<option value="4">COM_SOJAM_FIELD_RELACIONAMENTO_CIDADAO_OPTION</option>
+		</field>		
+		<field 
+			name="resposta_por"
+			type="list"
+			class="inputbox small"
+			size="1"
+			default="0"
+			required="true"
+			label="COM_SOJAM_FIELD_RESPOSTAPOR_LABEL"
+			description="COM_SOJAM_FIELD_RESPOSTAPOR_DESC">
+			<option value="0">COM_SOJAM_FIELD_RESPOSTAPOR_SEMRESPOSTA_OPTION</option>
+			<option value="1">COM_SOJAM_FIELD_RESPOSTAPOR_EMAIL_OPTION</option>
+			<option value="2">COM_SOJAM_FIELD_RESPOSTAPOR_CARTA_OPTION</option>
+			<option value="3">COM_SOJAM_FIELD_RESPOSTAPOR_FAX_OPTION</option>
+			<option value="4">COM_SOJAM_FIELD_RESPOSTAPOR_TELEFONE_OPTION</option>
+			<option value="5">COM_SOJAM_FIELD_RESPOSTAPOR_PESSOALMENTE_OPTION</option>
+		</field>	
+		<field
+			name="email"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_EMAIL_LABEL"
+			description="COM_SOJAM_FIELD_EMAIL_DESC"/>
+		<field
+			name="telefone"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_TELEFONE_LABEL"
+			description="COM_SOJAM_FIELD_TELEFONE_DESC"/>
+		<field
+			name="celular"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_CELULAR_LABEL"
+			description="COM_SOJAM_FIELD_CELULAR_DESC"/>
+		<field
+			name="contato"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_CONTATO_LABEL"
+			description="COM_SOJAM_FIELD_CONTATO_DESC"/>			
+		<field
+			name="cidade"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_CIDADE_LABEL"
+			description="COM_SOJAM_FIELD_CIDADE_DESC"/>			
+		<field
+			name="uf"
+			type="text"
+			class="inputbox"
+			size="2"
+			label="COM_SOJAM_FIELD_UF_LABEL"
+			description="COM_SOJAM_FIELD_UF_DESC"/>	
+		<field
+			name="cep"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_SOJAM_FIELD_CEP_LABEL"
+			description="COM_SOJAM_FIELD_CEP_DESC"/>						
+		<field
+			name="processo"
+			type="text"
+			class="inputbox"
+			size="100"
+			label="COM_SOJAM_FIELD_PROCESSO_LABEL"
+			description="COM_SOJAM_FIELD_PROCESSO_DESC"/>
+		<field
+			name="partes"
+			type="textarea"
+			rows="4"
+			cols="40"
+			class="inputbox"
+			label="COM_SOJAM_FIELD_PARTES_LABEL"
+			description="COM_SOJAM_FIELD_PARTES_DESC"/>																
+		<field
+			name="texto"
+			type="textarea"
+			class="inputbox"
+			required="true"
+			rows="10"
+			cols="40"
+			label="COM_SOJAM_FIELD_TEXTO_LABEL"
+			description="COM_SOJAM_FIELD_TEXTO_DESC"/>
+		<field
+			name="captcha"
+			type="Captcha"
+			label="COM_SOJAM_FIELD_CAPTCHA_LABEL"
+			description="COM_SOJAM_FIELD_CAPTCHA_DESC"
+			validate="captcha"
+			namespace="novamanifestacao" 
+			/>							
+	</fieldset>
+</form>

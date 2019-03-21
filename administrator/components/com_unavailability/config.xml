@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset 
+		name="component"
+		label="COM_UNAVAILABILITY_COMPONENT_LABEL"
+		description="COM_UNAVAILABILITY_COMPONENT_DESC">
+		
+		<field 
+			name="responsavel_default"
+			id="responsavel_default" 
+			type="text"
+			default="Diretor da DIVTIC"
+			label="COM_UNAVAILABILITY_RESPONSAVEL_DEFAULT_LABEL"
+			description="COM_UNAVAILABILITY_RESPONSAVEL_DEFAULT_DESC" />
+
+		<field
+			name="use_captcha"
+			type="radio"
+			label="COM_UNAVAILABILITY_USE_CAPTCHA_LABEL"
+			description="COM_UNAVAILABILITY_USE_CAPTCHA_DESC"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field 
+			name="system_category_parent_id"
+			id="system_category_parent_id" 
+			type="category"
+			extension="com_unavailability"
+			default=""
+			label="COM_UNAVAILABILITY_SYSTEM_CATEGORY_PARENT_ID_LABEL"
+			description="COM_UNAVAILABILITY_SYSTEM_CATEGORY_PARENT_ID_DESC" />
+			
+		<field 
+			name="unavailability_category_parent_id"
+			id="unavailability_category_parent_id" 
+			type="category"
+			extension="com_unavailability"
+			default=""
+			label="COM_UNAVAILABILITY_UNAVAILABILITY_CATEGORY_PARENT_ID_LABEL"
+			description="COM_UNAVAILABILITY_UNAVAILABILITY_CATEGORY_PARENT_ID_DESC" />
+		
+	</fieldset>
+
+	<fieldset 
+		name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+			name="rules" 
+			type="rules"
+			component="com_unavailability"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>
+</config>

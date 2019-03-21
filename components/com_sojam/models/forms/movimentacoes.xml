@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="sojam_movimentacoes">
+		<field
+			name="manifestacao_id"
+			type="text"
+			class="inputbox"
+			sixe="40"
+			required="true"
+			label="COM_SOJAM_FIELD_MANIFESTACAO_ID_LABEL"
+			description="COM_SOJAM_FIELD_MANIFESTACAO_ID_DESC"/>		
+		<field
+			name="manifestacao_cpf"
+			type="text"
+			class="inputbox"
+			required="true"
+			size="40"
+			label="COM_SOJAM_FIELD_MANIFESTACAO_CPF_LABEL"
+			description="COM_SOJAM_FIELD_MANIFESTACAO_CPF_DESC"/>					
+		<field
+			name="captcha"
+			type="Captcha"
+			label="COM_SOJAM_FIELD_CAPTCHA_LABEL"
+			description="COM_SOJAM_FIELD_CAPTCHA_DESC"
+			validate="captcha"
+			namespace="novamanifestacao" 
+			/>							
+	</fieldset>
+</form>

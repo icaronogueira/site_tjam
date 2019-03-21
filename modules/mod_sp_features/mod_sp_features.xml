@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>SP Features</name>
+  <author>JoomShaper.com</author>
+  <creationDate>july 2015</creationDate>
+  <copyright>Copyright (C) 2010 - 2015 JoomShaper.com. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL or Later</license>
+  <authorEmail>support@joomshaper.com</authorEmail>
+  <authorUrl>www.joomshaper.com</authorUrl>
+  <version>1.0</version>
+  <description>SP Features</description>
+  <languages>
+    <language tag="en-GB">language/en-GB.mod_sp_features.ini</language>
+  </languages>
+  <files>
+    <filename module="mod_sp_features">mod_sp_features.php</filename>
+    <folder>assets</folder>
+    <folder>language</folder>
+    <folder>tmpl/</folder>
+    <folder>fields/</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="basic" addfieldpath="/modules/mod_sp_features/fields">
+
+      <!--Feature 1-->
+      <field name="feature1_spacer" type="spacer" label="Feature 1" />
+      <field name="icon_image1" type="list" default="0" label="Box Type" description="">
+        <option value="0">Icon</option>
+        <option value="1">Image</option>
+      </field>
+      <field name="icon1" type="icon" label="Icon" description="Feature Icon" />
+      <field name="image1" label="Image" type="media" directory="demo/feature_image" />
+      <field name="title1" type="text" label="Title" description="Feature Title" />
+      <field name="desc1" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="read_more_text1" type="text" label="Read More Text" description="Custom Text" />
+      <field name="link1" type="text" label="Read More Link"  default="" description="Custom link" />
+      <field name="target1" type="list" default="" label="Link target" description="select a href target">
+        <option value="_blank">Blank</option>
+        <option value="_parent">Parent</option>
+        <option value="_self">Self</option>
+      </field>
+      <field name="class1" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature1_hr" type="spacer" hr="true" />
+
+      <!--Feature 2-->
+      <field name="feature2_spacer" type="spacer" label="Feature 2" />
+      <field name="icon_image2" type="list" default="0" label="Box Type" description="">
+        <option value="0">Icon</option>
+        <option value="1">Image</option>
+      </field>
+      <field name="icon2" type="icon" label="Icon" description="Feature Icon" />
+      <field name="image2" label="Image" type="media" directory="demo/feature_image" />
+      <field name="title2" type="text" label="Title" description="Feature Title" />
+      <field name="desc2" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="read_more_text2" type="text" label="Read More Text" description="Custom Text" />
+      <field name="link2" type="text" label="Read More Link" description="Custom link" />
+      <field name="target2" type="list" default="" label="Link target" description="select a href target">
+        <option value="">Self Window</option>
+        <option value="_blank">New window</option>
+      </field>
+      <field name="class2" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature2_hr" type="spacer" hr="true" />
+
+       <!--Feature 3-->
+      <field name="feature3_spacer" type="spacer" label="Feature 3" />
+      <field name="icon_image3" type="list" default="0" label="Box Type" description="">
+        <option value="0">Icon</option>
+        <option value="1">Image</option>
+      </field>
+      <field name="icon3" type="icon" label="Icon" description="Feature Icon" />
+      <field name="image3" label="Image" type="media" directory="demo/feature_image" />
+      <field name="title3" type="text" label="Title" description="Feature Title" />
+      <field name="desc3" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="read_more_text3" type="text" label="Read More Text" description="Custom Text" />
+      <field name="link3" type="text" label="Read More Link" description="Custom link" />
+      <field name="target3" type="list" default="" label="Link target" description="select a href target">
+        <option value="">Self Window</option>
+        <option value="_blank">New window</option>
+      </field>
+      <field name="class3" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature3_hr" type="spacer" hr="true" />
+
+
+       <!--Feature 4-->
+      <field name="feature4_spacer" type="spacer" label="Feature 4" />
+      <field name="icon_image4" type="list" default="0" label="Box Type" description="">
+        <option value="0">Icon</option>
+        <option value="1">Image</option>
+      </field>
+      <field name="icon4" type="icon" label="Icon" description="Feature Icon" />
+      <field name="image4" label="Image" type="media" directory="demo/feature_image" />
+      <field name="title4" type="text" label="Title" description="Feature Title" />
+      <field name="desc4" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="read_more_text4" type="text" label="Read More Text" description="Custom Text" />
+      <field name="link4" type="text" label="Read More Link" description="Custom link" />
+      <field name="target4" type="list" default="" label="Link target" description="select a href target">
+        <option value="">Self Window</option>
+        <option value="_blank">New window</option>
+      </field>
+      <field name="class4" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature4_hr" type="spacer" hr="true" />
+
+      <!--Feature 5-->
+      <field name="feature5_spacer" type="spacer" label="Feature 5" />
+      <field name="icon_image5" type="list" default="0" label="Box Type" description="">
+        <option value="0">Icon</option>
+        <option value="1">Image</option>
+      </field>
+      <field name="icon5" type="icon" label="Icon" description="Feature Icon" />
+      <field name="image5" label="Image" type="media" directory="demo/feature_image" />
+      <field name="title5" type="text" label="Title" description="Feature Title" />
+      <field name="desc5" type="textarea" rows="5" cols="40" label="Desc" description="Feature Description" />
+      <field name="read_more_text5" type="text" label="Read More Text" description="Custom Text" />
+      <field name="link5" type="text" label="Read More Link" description="Custom link" />
+      <field name="target5" type="list" default="" label="Link target" description="select a href target">
+        <option value="">Self Window</option>
+        <option value="_blank">New window</option>
+      </field>
+      <field name="class5" type="text" label="Custom Class" description="Custom Class" />
+      <field name="feature4_hr" type="spacer" hr="true" />
+
+      </fieldset>
+
+      <fieldset name="style" label="MOD_SP_FEATURE_FIELDSET_STYLE">
+        <field name="columns" type="list" default="4" label="MOD_SP_FEATURE_COLUMNS" description="MOD_SP_FEATURE_COLUMNS_DESC">
+          <option value="2">2</option>  
+          <option value="3">3</option>  
+          <option value="4">4</option>
+        </field>
+      </fieldset>
+      
+      <fieldset name="advanced">
+        <!-- <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" /> --> 
+        <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+        <field name="force_load_fontawesome" type="radio" default="0" class="btn-group" label="SP_FORCE_LOAD_FONT_AWESOME" description="SP_FORCE_LOAD_FONT_AWESOME_DESC">
+          <option value="0">SP_FORCE_LOAD_NO</option>
+          <option value="1">SP_FORCE_LOAD_YES</option>
+        </field>
+        <field name="module_cache" type="list" default="1" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+          <option value="1">JGLOBAL_USE_GLOBAL</option>
+          <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+        </field>
+        <field name="cache" type="hidden" default="1" />
+        <field name="cache_time" type="text" default="900" label="COM_MODULES_FIELD_CACHE_TIME_LABEL" description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+        <field name="cachemode" type="hidden" default="itemid">
+         <option value="itemid"></option>
+       </field>
+     </fieldset>
+   </fields>
+ </config>
+</extension>

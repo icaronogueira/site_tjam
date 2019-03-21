@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension 
+	type="component" 
+	version="3.0" 
+	method="upgrade">
+	<name>com_extrajudicial</name>
+	<author>Setor de Desenvolvimento de Sistemas / Divisão TIC</author>
+	<creationDate>Setembro 2017</creationDate>
+	<copyright>
+		(C) Copyright 2017 - 2022 Tribunal de Justiça do Estado do Amazonas. 
+		All rights reserved.
+	</copyright>
+	<license>
+		GNU General Public License version 2 or later; 
+		see LICENSE.txt
+	</license>
+	<authorEmail>marcus.martinho@tjam.jus.br</authorEmail>
+	<authorUrl>www.tjam.jus.br</authorUrl>
+	<version>1.0.0.1</version>
+	<description>com_extrajudicial_xml_description</description>
+	<scriptfile>script.php</scriptfile>
+	<install>
+	</install>
+	<uninstall>
+	</uninstall>
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>media</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>extrajudicial.php</filename>
+	</files>
+	<administration>
+		<menu img="class:categories">COM_EXTRAJUDICIAL_MENU</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid
+				XML and be parsed by the installer
+			-->
+			<menu
+				link="option=com_extrajudicial"
+				view="info"
+				img="class:generic"
+				alt="Extrajudicial/Info">
+				COM_EXTRAJUDICIAL_SUBMENU_INFO
+			</menu>	
+		</submenu>
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>index.html</filename>
+			<filename>script.php</filename>
+			<filename>extrajudicial.php</filename>
+			<filename>extrajudicial.xml</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_extrajudicial.ini</language>
+			<language tag="pt-BR">language/pt-BR/pt-BR.com_extrajudicial.sys.ini</language>			
+		</languages>		
+	</administration>
+</extension>

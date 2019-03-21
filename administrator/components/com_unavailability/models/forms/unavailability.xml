@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="unavailability_document">
+		<field 
+			name="id"
+			type="text"
+			class="readonly"
+			default="0"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			readonly="true"
+			description="JGLOBAL_FIELD_ID_DESC"/>
+		<field
+			name="title"
+			type="text"			
+			class="inputbox"
+			size="40"
+			label="COM_UNAVAILABILITY_FIELD_TITLE_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_TITLE_DESC"/>
+		<field
+			name="catid"
+			type="unavailabilitycategoryedit"
+			label="JCATEGORY"
+			description="COM_UNAVAILABILITY_FIELD_CATEGORY_DESC"
+			extension="com_unavailability"
+			required="true"
+			default=""/>
+		<field
+			name="alias"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_UNAVAILABILITY_FIELD_ALIAS_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_ALIAS_DESC"/>
+		<field 
+			name="created_by" 
+			type="user"
+			label="COM_UNAVAILABILITY_FIELD_CREATED_BY_LABEL" 
+			description="COM_UNAVAILABILITY_FIELD_CREATED_BY_DESC" />	
+		<field
+			name="sistemas"
+			type="systems"
+			multiple="true"
+			class="inputbox"
+			label="COM_UNAVAILABILITY_FIELD_SISTEMAS_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_SISTEMAS_DESC"/>
+		<field 
+			name="state"
+			type="list"
+			class="inputbox small"
+			size="1"
+			default="1"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		<field
+			name="dthr_inicio"
+			type="calendar"
+			class="inputbox"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filer="user_utc"
+			label="COM_UNAVAILABILITY_FIELD_DTHR_INICIO_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_DTHR_INICIO_DESC"/>				
+		<field
+			name="dthr_final"
+			type="calendar"
+			class="inputbox"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filer="user_utc"
+			label="COM_UNAVAILABILITY_FIELD_DTHR_FINAL_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_DTHR_FINAL_DESC"/>
+		<field
+			name="dthr_emissao"
+			type="calendar"
+			class="inputbox"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filer="user_utc"
+			label="COM_UNAVAILABILITY_FIELD_DTHR_EMISSAO_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_DTHR_EMISSAO_DESC"/>
+		<field
+			name="responsavel"
+			type="text"
+			class="inputbox"
+			size="40"
+			label="COM_UNAVAILABILITY_FIELD_RESPONSAVEL_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_RESPONSAVEL_DESC"/>	
+		<field
+			name="detalhes"
+			type="editor"
+			buttons="true"
+			hide="pagebreak,readmore"
+			filter="JComponentHelper::filterText"
+			class="inputbox"
+			label="COM_UNAVAILABILITY_FIELD_DETALHES_LABEL"
+			description="COM_UNAVAILABILITY_FIELD_DETALHES_DESC"/>								
+	</fieldset>
+</form>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset 
+		name="component"
+		label="COM_EXTRAJUDICIAL_COMPONENT_LABEL"
+		description="COM_EXTRAJUDICIAL_COMPONENT_DESC">
+			
+		<field 
+			name="restserverurl"
+			id="restserverurl" 
+			type="text"
+			default="http://localhost/apmoodle01_extrajudicial/index.php/api"
+			label="COM_EXTRAJUDICIAL_URL_SERVIDOR_REST_API_LABEL"
+			description="COM_EXTRAJUDICIAL_URL_SERVIDOR_REST_API_DESC" />
+		
+		<field 
+			name="restusername"
+			id="restusername" 
+			type="text"
+			default="admin@restuser"
+			label="COM_EXTRAJUDICIAL_REST_USER_REST_API_LABEL"
+			description="COM_EXTRAJUDICIAL_REST_USER_REST_API_DESC" />
+
+		<field
+			name="restpassword"
+			id="restpassword"
+			type="text"
+			default="admin@Access"
+			label="COM_EXTRAJUDICIAL_REST_PASSWORD_REST_API_LABEL"
+			description="COM_EXTRAJUDICIAL_REST_PASSWORD_REST_API_DESC" />
+
+		<field
+			name="restlistlimit"
+			id="restlistlimit"
+			type="text"
+			default="5"
+			label="COM_EXTRAJUDICIAL_REST_LIST_LIMIT_LABEL"
+			description="COM_EXTRAJUDICIAL_REST_LIST_LIMIT_DESC" />
+		
+		<field
+			name="use_captcha"
+			type="radio"
+			label="COM_EXTRAJUDICIAL_USE_CAPTCHA_LABEL"
+			description="COM_EXTRAJUDICIAL_USE_CAPTCHA_DESC"
+			default="0"
+			class="btn-group btn-group-yesno"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		
+		<field
+			name="captcha_length"
+			type="text"
+			default="6"
+			label="COM_EXTRAJUDICIAL_CAPTCHA_LENGTH_LABEL"
+			description="COM_EXTRAJUDICIAL_CAPTCHA_LENGTH_DESC"
+			>
+		</field>
+				
+	</fieldset>
+	
+	<fieldset 
+		name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL">
+
+		<field 
+			name="rules" 
+			type="rules"
+			component="com_extrajudicial"
+			filter="rules"
+			validate="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			section="component" />
+	</fieldset>	
+</config>

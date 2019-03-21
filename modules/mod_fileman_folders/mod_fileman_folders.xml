@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0.0" client="site" method="upgrade">
+  <identifier>mod://site/fileman_folders</identifier>
+	<name>mod_fileman_folders</name>
+	<creationDate>January 2019</creationDate>
+	<author>Joomlatools</author>
+	<copyright>Copyright (C) 2011 Timble CVBA (http://www.timble.net)</copyright>
+    <license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
+	<authorEmail>support@joomlatools.com</authorEmail>
+	<authorUrl>www.joomlatools.com</authorUrl>
+	<version>3.2.5</version>
+	<description>MOD_FILEMAN_FOLDERS_XML_DESCRIPTION</description>
+  <files>
+		<filename module="mod_fileman_folders">mod_fileman_folders.php</filename>
+		<filename>html.php</filename>
+		<folder>tmpl</folder>
+        <folder>language</folder>
+	</files>
+  <config>
+		<fields name="params" addfieldpath="/components/com_fileman/forms/fields">
+        <fieldset name="basic">
+			<field name="page" type="pages"
+				   required="true"
+				   label="MOD_FILEMAN_FOLDERS_FIELD_PAGE_LABEL"
+				   description="MOD_FILEMAN_FOLDERS_FIELD_PAGE_LABEL"
+				   default=""/>
+            <field name="folder" type="filemanpagefolders"
+				   id="fileman_folder"
+                   label="MOD_FILEMAN_FOLDERS_FIELD_PARENT_LABEL"
+                   description="MOD_FILEMAN_FOLDERS_FIELD_PARENT_DESC"
+                   default="" />
+			<field name="tree" type="radio" class="btn-group" default="1" label="SHOW_ALL_CHILDREN"
+			description="SHOW_ALL_CHILDREN_DESC">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="limit" type="text" default="10"
+				   label="LIMIT_LABEL"
+				   description="LIMIT_DESC" />
+			<field name="show_icon" type="radio" class="btn-group" default="1" label="SHOW_ICON">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="humanize_filenames" type="radio" class="btn-group" default="1" label="HUMANIZE_FOLDERNAMES"
+				   description="HUMANIZE_FOLDERNAMES_DESCRIPTION">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>
+			<field name="sort" type="list" default="name" label="SORT_BY">
+				<option value="name">SORT_BY_NAME</option>
+				<option value="modified_on">SORT_BY_MODIFIED_ON</option>
+			</field>
+        </fieldset>
+		<fieldset name="advanced">
+			<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+    </fields>
+  </config>
+</extension>

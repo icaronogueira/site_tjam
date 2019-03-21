@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<layout 
+		title="COM_LISTING_LOCAIS_VIEW_DEFAULT_TITLE"
+		option="COM_LISTING_LOCAIS_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_LISTING_LOCAIS_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field
+				name="categoryids"
+				type="text"
+				default=""
+				class="inputbox"
+				label="COM_LISTING_LOCAIS_VIEW_FIELD_CATEGORYIDS_LABEL"
+				description="COM_LISTING_LOCAIS_VIEW_FIELD_CATEGORYIDS_DESC"
+				required="false">
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

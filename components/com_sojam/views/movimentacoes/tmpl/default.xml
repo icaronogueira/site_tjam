@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SOJAM_MOVIMENTACOES_DEFAULT_LAYOUT_TITLE" option="COM_SOJAM_MOVIMENTACOES_DEFAULT_LAYOUT_OPTION">
+		<message>
+			<![CDATA[COM_SOJAM_MOVIMENTACOES_DEFAULT_LAYOUT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset 
+			name="basic"
+			label="COM_SOJAM_MOVIMENTACOES_PARAMS_LABEL">
+
+			<field
+				name="mostrar_mensagem"
+				type="list"
+				label="COM_SOJAM_MOVIMENTACOES_PARAMS_MOSTRAR_MENSAGEMBV_LABEL"
+				description="COM_SOJAM_MOVIMENTACOES_PARAMS_MOSTRAR_MENSAGEMBV_DESC"
+				>
+				<option value="1">JSHOW</option>
+				<option value="0">JHIDE</option>
+			</field>
+		
+		</fieldset>
+	</fields>
+</metadata>
